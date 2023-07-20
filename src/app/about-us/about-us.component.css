@@ -28,6 +28,7 @@ h2 {
 
 
 .wisey-small {
+  padding-top: 30px;
   width: 100%;
   height: auto;
   max-width: 400px; /* Adjust the value as needed */
@@ -46,6 +47,7 @@ h2 {
   font-family: "Arial", sans-serif;
   text-align: left;
   font-weight: bold;
+  color:  #5D5D5D;
 }
 
 

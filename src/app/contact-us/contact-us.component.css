@@ -15,6 +15,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-item {
@@ -28,11 +29,12 @@ h2 {
 }
 
 .contact-icon {
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
 }
 
 .contact-text {
   font-size: 18px;
   line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
 }

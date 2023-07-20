@@ -1,1 +1,37 @@
-<p>loan-calculator works!</p>
+<div class="container">
+  <h2>Welcome to the Loan Calculator</h2>
+
+  <div class="flex-container">
+    <div class="form-container">
+      <div>
+      <label for="loanAmount">Loan Amount (Principal):</label>
+      <input type="number" [(ngModel)]="loanAmount" name="loanAmount" id="loanAmount">
+      </div>
+
+      <div>
+      <label for="interestRate">Interest Rate:</label>
+      <input type="number" [(ngModel)]="interestRate" name="interestRate" id="interestRate">
+      </div>
+
+      <div>
+      <label for="loanTerm">Number of Years:</label>
+      <input type="number" [(ngModel)]="loanTerm" name="loanTerm" id="loanTerm">
+      </div>
+
+      <button (click)="calculateLoan()">Calculate</button>
+    </div>
+
+  <div class="result-container">
+    <div *ngIf="monthlyPayment !== null">
+      <h3>Your monthly payment:</h3>
+      <p class="result">{{ monthlyPayment | currency }}</p>
+    </div>
+
+    <div *ngIf="totalInterest !== null">
+      <h3>Total Interest Paid:</h3>
+      <p class="result">{{ totalInterest | currency }}</p>
+    </div>
+</div>
+</div>
+</div>
+
